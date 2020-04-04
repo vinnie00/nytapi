@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT article search</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/fba7c5a5bb.js" crossorigin="anonymous"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet"> <!-- Title Font -->
+</head>
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid title">
+            <div class="container">
+                <h1 class="display-4"> <i class="far fa-newspaper"></i> New York Times Search</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Search Parameters -->
+                <div class="card text-center" id="inputDiv">
+                    <div class="card-header">
+                        <i class="fas fa-folder"></i> Search Parameters
+                    </div>
+
+                    <div class="card-content">
+                        <form>
+                            <!-- Search boxes -->
+                            <div class="form-group">
+                                <label for="search-term-input">Search term:</label>
+                                <input type="text" class="form-control" id="search-term-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="record-number-input">Number of records to receive</label>
+                                <select class="form-control" id="record-number-input">
+                                    <option>1</option>
+                                    <option>5</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="start-year-input">Start Year (optional)</label>
+                                <input type="text" class="form-control" id="start-year-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="end-year-input">End Year (optional)</label>
+                                <input type="text" class="form-control" id="end-year-input">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="btn-group">
+                        <button id="search-button" class="button"> <i class="fas fa-search"></i> Search</button>
+                        <button id="clear-results-button" class="button"> <i class="fas fa-trash"></i> Clear Results</button>
+                    </div>
+                </div>
+
+                <!-- Top Articles -->
+                <div class="card text-center">
+                    <div class="card-header">
+                        <i class="fas fa-th"></i> Top Articles
+                    </div>
+
+                    <!-- Place to append articles -->
+                    <div class="card-content" id="article-list">
+                        <!-- <div class="entry">
+                            <h3 class="abstract">test</h3>
+                            <p class="article">testing</p>
+                            <p class="date">12020/05/02983</p>
+                        </div> -->
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+
+    <hr />
+    <footer>
+        
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Custom -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.entry {
+    padding-top: 5px;
+    padding-left: 15px;
+    background-color: rgb(247, 247, 247);
+}
+
+.date {
+    color: #AAA;
+    font-style: italic;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-header {
+    text-align: left;
+    font-weight: bold;
+}
+
+.title {
+    font-family: Niconne;
+    background-color: #21325A;
+    text-align: center;
+    color: white;
+}
+.button {
+    width: 15%;
+    background-color: darkgray;
+    color: black;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    padding: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+}
+@media screen and (max-width: 992px) {
+    .button{
+        width:55%;
+        margin-right: 15px;
+    }
+}
+.button:hover {
+    background-color: white;
+}
+
+#article-list {
+    text-align: left;
+}
+
+#inputDiv {
+    margin-bottom: 50px;
+}
